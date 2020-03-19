@@ -11,7 +11,7 @@ class ShrewsoftVpnClient < Formula
   option "without-ldap", "Disable LDAP Authentication Support"
 
   depends_on "cmake" => :build
-  depends_on "openssl"
+  depends_on "openssl@1.0"
   depends_on :tuntap
   depends_on "cartr/homebrew-qt4/qt" if build.with? "gui"
 
